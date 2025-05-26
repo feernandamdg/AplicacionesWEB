@@ -12,12 +12,20 @@ require('./config/passport');
 const app = express();
 app.use(cors());
 app.use(express.json()); //esto sirve para que se puedan leer los json 
-app.use(passport.initialize());
+app.use(passport.initialize()); //aqui se importa la BD productos para que sequelize.sync lo registre
 
+/* Rutas para auth*/
 const authRoutes = require('./routes/authRoutes');
 app.use('/api/auth', authRoutes);
 
+/* Rutas del Producto BD */
+const productRoutes = require('./routes/productRoutes');
+app.use('/api/products', productRoutes); // 👈 Monta las rutas de producto
+
 const sequelize = require('./config/database');
+require('./models/Product'); //Importe la bd de Productos 
+
+
 
 sequelize.authenticate()
   .then(() => {

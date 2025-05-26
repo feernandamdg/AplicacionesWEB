@@ -4,7 +4,7 @@ El controlador de autenticación
 */
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
-const User = require('../models/User');
+const User = require('../models/User'); //usamos la info de la DB de usuarios
 
 const JWT_SECRET = process.env.JWT_SECRET;
 
