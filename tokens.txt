@@ -1,0 +1,12 @@
+Id. 1 Fer cuando LOGIN
+"user": {
+        "id": 1,
+        "email": "fer@example.com",
+        "password": "$2b$10$3Z6ibL.8uQZhgbwuZObd..fD12Ew9yS5qHvPqEoeqy0.y9Tpmh9wS",
+        "name": "Fer",
+        "isAdmin": false,
+        "googleId": null,
+        "createdAt": "2025-05-25T01:25:02.457Z",
+        "updatedAt": "2025-05-25T01:25:02.457Z"
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ4MTM4Mzg2LCJleHAiOjE3NDgyMjQ3ODZ9.tJRaDVVqe2qsVrPB8Nw_slR-h0lE2W1u4wbbEG1SQ4c"
