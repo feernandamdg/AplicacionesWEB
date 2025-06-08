@@ -19,10 +19,10 @@ exports.register = async (req, res) => {
     const user = await User.create({ email, password: hash, name });
 
     const token = jwt.sign({ id: user.id }, JWT_SECRET, { expiresIn: '1d' });
-    //Cambié res.json({ user, token }) por lo siguiente para que no se muestre la contraseña únicamente
-    //res.json({ user, token });
-    const { password, ...userData } = user.toJSON();
-    res.json({ user: userData, token });
+    /*Cambié res.json({ user, token }) por lo siguiente para que no se muestre la contraseña únicamente */
+    res.json({ user, token });
+    //const { password, ...userData } = user.toJSON();
+    //res.json({ user:userData, token });
 
   } catch (err) {
     res.status(500).json({ error: 'Error en el servidor' });

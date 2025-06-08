@@ -10,3 +10,18 @@ Id. 1 Fer cuando LOGIN
         "updatedAt": "2025-05-25T01:25:02.457Z"
     },
     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ4MTM4Mzg2LCJleHAiOjE3NDgyMjQ3ODZ9.tJRaDVVqe2qsVrPB8Nw_slR-h0lE2W1u4wbbEG1SQ4c"
+{
+    "user": {
+        "isAdmin": false,
+        "id": 6,
+        "email": "Alicia@ejemplo.com",
+        "password": "$2b$10$yqQUJbeRGdbMhVYjuefi6OsMHgfqJYLiqXyuUjROY.tg9p/yU.glm",
+        "name": "Alicia",
+        "updatedAt": "2025-06-03T01:08:20.530Z",
+        "createdAt": "2025-06-03T01:08:20.530Z",
+        "googleId": null
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNzQ4OTEyOTAwLCJleHAiOjE3NDg5OTkzMDB9.ZZQ0TQ_msBNB6YuqD0mZ0qHq5CD9tJplTaMVSU-ohBE"
+}
+
+POST http://localhost:4000/api/auth/login
